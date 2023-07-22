@@ -10,10 +10,10 @@ class ListOfNotes:
 
     def __init__(self):
         try:
-            with open('notes.pk1', 'rb') as file:
+            with open('notes.pkl', 'rb') as file:
                 self.__notes = pickle.load(file)
                 self.__index = len(self.__notes)
-            with open('indexes.pk1', 'rb') as file:
+            with open('indexes.pkl', 'rb') as file:
                 self.__index_stack = pickle.load(file)
         except EOFError:
             self.__notes = []

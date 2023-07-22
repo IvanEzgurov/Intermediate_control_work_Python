@@ -39,7 +39,7 @@ class View:
 
     def info_note_msg(self, key):
         into = {'add': 'добавлена', 'del': 'удалена', 'edit': 'изменена'}
-        print(f"Заметка успешно {info[key]}!")
+        print(f"Заметка успешно {[key]}!")
 
     def input_note_name(self):
         return input(f"Введите НАЗВАНИЕ заметки:")
